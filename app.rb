@@ -9,23 +9,23 @@ Dotenv.load
 
 # Render home page
 get '/' do
-    File.read(File.join('public', 'index.html'))
+  File.read(File.join('public', 'index.html'))
 end
 
-# Generate a token for use in our IP Messaging application
+# Generate a token for use in our Video application
 get '/token' do
-    # Create a random username for the client
-    identity = Faker::Internet.user_name
+  # Create a random username for the client
+  identity = Faker::Internet.user_name
 
-    # Create an Access Token for IP messaging usage
-    token = Twilio::Util::AccessToken.new ENV['TWILIO_ACCOUNT_SID'],
-    ENV['TWILIO_API_KEY'], ENV['TWILIO_API_SECRET'], 3600, identity
+  # Create an Access Token for Video usage
+  token = Twilio::Util::AccessToken.new ENV['TWILIO_ACCOUNT_SID'],
+  ENV['TWILIO_API_KEY'], ENV['TWILIO_API_SECRET'], 3600, identity
 
-    # Grant access to Conversations
-    grant = Twilio::Util::AccessToken::ConversationsGrant.new
-    grant.configuration_profile_sid = ENV['TWILIO_CONFIGURATION_SID']
-    token.add_grant grant
+  # Grant access to Conversations
+  grant = Twilio::Util::AccessToken::ConversationsGrant.new
+  grant.configuration_profile_sid = ENV['TWILIO_CONFIGURATION_SID']
+  token.add_grant grant
 
-    # Generate the token and send to client
-    json :identity => identity, :token => token.to_jwt
+  # Generate the token and send to client
+  json :identity => identity, :token => token.to_jwt
 end
