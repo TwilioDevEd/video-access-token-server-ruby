@@ -1,7 +1,7 @@
 # Video Quickstart for Ruby
 
 This application should give you a ready-made starting point for writing your
-own messaging apps with Twilio IP Messaging. Before we begin, we need to collect
+own video chatting apps with Twilio IP Messaging. Before we begin, we need to collect
 all the credentials we need to run the application:
 
 Credential | Description
