@@ -6,10 +6,10 @@ all the credentials we need to run the application:
 
 Credential | Description
 ---------- | -----------
-Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/user/account/video).
-Twilio Video Configuration SID | Adds video capability to the access token - [generate one here](https://www.twilio.com/user/account/video/profiles)
-API Key | Used to authenticate - [generate one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
-API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
+Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/console).
+Twilio Video Configuration SID | Adds video capability to the access token - [generate one here](https://www.twilio.com/console/video/profiles)
+API Key | Used to authenticate - [generate one here](https://www.twilio.com/console/dev-tools/api-keys).
+API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/console/dev-tools/api-keys).
 
 ## A Note on API Keys
 
@@ -25,7 +25,13 @@ Create a configuration file for your application:
 cp .env.example .env
 ```
 
-Edit `.env` with the four configuration parameters we gathered from above.
+Edit `.env` with the four configuration parameters we gathered from above. Export
+the configuration in this file as system environment variables like so on Unix
+based systems:
+
+```bash
+source .env
+```
 
 Next, we need to install our depenedencies:
 
