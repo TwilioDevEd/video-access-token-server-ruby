@@ -1,15 +1,15 @@
 # Video Quickstart for Ruby
 
 This application should give you a ready-made starting point for writing your
-own video chatting apps with Twilio IP Messaging. Before we begin, we need to collect
-all the credentials we need to run the application:
+own video apps with Twilio Video. Before we begin, we need to collect
+all the config values we need to run the application:
 
-Credential | Description
----------- | -----------
-Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/console).
-Twilio Video Configuration SID | Adds video capability to the access token - [generate one here](https://www.twilio.com/console/video/profiles)
-API Key | Used to authenticate - [generate one here](https://www.twilio.com/console/dev-tools/api-keys).
-API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/console/dev-tools/api-keys).
+| Config Value  | Description |
+| :-------------  |:------------- |
+Configuration Profile SID | Identifier for a set of config properties for your video application - [find yours here](https://www.twilio.com/console/video/profiles).
+Account SID | Your primary Twilio account identifier - find this [in the console here](https://www.twilio.com/console).
+API Key | Used to authenticate - [generate one here](https://www.twilio.com/console/video/dev-tools/api-keys).
+API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/console/video/dev-tools/api-keys).
 
 ## A Note on API Keys
 
@@ -42,7 +42,7 @@ bundle exec ruby app.rb
 Your application should now be running at [http://localhost:4567](http://localhost:4567). 
 Send an invite to another user in another browser tab/window and start video chatting!
 
-![screenshot of chat app](https://camo.githubusercontent.com/57dddb5e27dba5ac9ba64049f0cacc654cb78036/687474703a2f2f692e696d6775722e636f6d2f6e5652373046512e706e67)
+![screenshot of chat app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/video2.original.png)
 
 ## License
 
