@@ -39,8 +39,7 @@ Now we should be all set! Run the application using the `ruby` command.
 bundle exec ruby app.rb
 ```
 
-Your application should now be running at [http://localhost:4567](http://localhost:4567). 
-Send an invite to another user in another browser tab/window and start video chatting!
+Your application should now be running at [http://localhost:4567](http://localhost:4567). Select any room name and join the room. Join the same room with another user in another browser tab or window to start video chatting!
 
 ![screenshot of chat app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/video2.original.png)
 
