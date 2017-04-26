@@ -16,7 +16,7 @@ When you generate an API key pair at the URLs above, your API Secret will only
 be shown once - make sure to save this in a secure location, 
 or possibly your `~/.bash_profile`.
 
-## Setting Up The Ruby (Sinatra) Application
+## Setting up the Ruby (Sinatra) Application
 
 Create a configuration file for your application:
 
@@ -24,7 +24,7 @@ Create a configuration file for your application:
 cp .env.example .env
 ```
 
-Edit `.env` with the four configuration parameters we gathered from above.
+Edit `.env` with the three configuration parameters we gathered from above.
 
 Next, we need to install our dependencies:
 
