@@ -5,6 +5,11 @@ require 'dotenv'
 # Load environment configuration
 Dotenv.load
 
+# Set the environment after dotenv loads
+# Default to production
+environment = (ENV['APP_ENV'] || ENV['RACK_ENV'] || :production).to_sym
+set :environment, environment
+
 # Generate a token for use in our Video application
 get '/' do
   identity = params[:identity] || 'identity'
